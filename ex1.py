@@ -1,12 +1,12 @@
 # app.py
 from flask import Flask
 
-#Welcome 
-app = Flask(_name_)
+# Welcome
+app = Flask(__name__)
 
 @app.route('/')
 def welcome():
     return 'Welcome to my web application!'
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
